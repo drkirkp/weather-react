@@ -1,17 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-import React from "react";
-import Weather from "./weather";
+import React, { Component } from "react";
+import Navigation from "./Navigation";
+import Main from "./Main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World!!!!!</h1>
-        <Weather />
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navigation />
+        <Main />
+      </div>
+    );
+  }
 }
-
-export default App;
